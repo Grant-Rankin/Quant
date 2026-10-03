@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "pricing/black-scholes.html",
+    "href": "pricing/black-scholes.html",
+    "title": "Black-Scholes Pricing",
+    "section": "",
+    "text": "Why we need a closed-form price for European options."
+  },
+  {
+    "objectID": "pricing/black-scholes.html#motivation",
+    "href": "pricing/black-scholes.html#motivation",
+    "title": "Black-Scholes Pricing",
+    "section": "",
+    "text": "Why we need a closed-form price for European options."
+  },
+  {
+    "objectID": "pricing/black-scholes.html#the-maths",
+    "href": "pricing/black-scholes.html#the-maths",
+    "title": "Black-Scholes Pricing",
+    "section": "The maths",
+    "text": "The maths\nUnder the risk-neutral measure, the stock follows\n\\[dS_t = r S_t\\,dt + \\sigma S_t\\,dW_t\\]\nand the price of a European call is\n\\[C = S_0 N(d_1) - K e^{-rT} N(d_2)\\]\nwhere\n\\[d_1 = \\frac{\\ln(S_0/K) + (r + \\sigma^2/2)T}{\\sigma\\sqrt{T}}, \\qquad d_2 = d_1 - \\sigma\\sqrt{T}.\\]"
+  },
+  {
+    "objectID": "pricing/black-scholes.html#implementation",
+    "href": "pricing/black-scholes.html#implementation",
+    "title": "Black-Scholes Pricing",
+    "section": "Implementation",
+    "text": "Implementation\nSee the notebook."
+  },
+  {
+    "objectID": "pricing/black-scholes.html#results",
+    "href": "pricing/black-scholes.html#results",
+    "title": "Black-Scholes Pricing",
+    "section": "Results",
+    "text": "Results\n\n\n\nConvergence"
+  },
+  {
+    "objectID": "pricing/black-scholes.html#limitations",
+    "href": "pricing/black-scholes.html#limitations",
+    "title": "Black-Scholes Pricing",
+    "section": "Limitations",
+    "text": "Limitations\nConstant volatility, no jumps, European exercise only."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quant",
+    "section": "",
+    "text": "This is a Quarto website."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
