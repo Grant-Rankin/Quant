@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Quant"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Theory
+        menu:
+          - href: theory/course_a_discrete.qmd
+            text: Part I:Introduction to Quant Finance
+          - href: theory/course_b_continuous.qmd
+            text: Part II:Continuous Time Finance
+
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    html-math-method: mathjax
+    css: styles.css
+
+execute:
+  freeze: auto
