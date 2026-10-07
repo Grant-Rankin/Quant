@@ -21,7 +21,14 @@ Alongside the theory, I also cover practical quant finance topics such as:
 - Trading strategies
 - Performance metrics
 
+This is a mix of less mathematically rigourous but more practical topics, and is aimed at giving you the tools to apply the theory in practice.
+
 Wherever possible, theory pages are paired with Python code so you can see the ideas in action.
+
+### Projects
+
+Projects bring together both the theory and application into self-contained examples. Some may be just one jupyter notebook and other's could be its own repo.
+The aim for the projects is to have one for each stage of learning so that after finishing a course you can apply the ideas into one project.
 
 ## Prerequisites
 

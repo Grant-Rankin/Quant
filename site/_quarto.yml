@@ -14,7 +14,14 @@ website:
             text: Part I:Introduction to Quant Finance
           - href: theory/course_b_continuous.qmd
             text: Part II:Continuous Time Finance
-
+      - text: Projects
+        menu:
+          - href: projects/project_a.qmd
+            text: Project A
+      - text: Applications
+        menu:
+          - href: applications/backtesting.qmd
+            text: Backtesting
       - href: about.qmd
         text: About
     right:
