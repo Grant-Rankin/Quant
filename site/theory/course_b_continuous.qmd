@@ -1,4 +1,0 @@
-Follows the lectures by Liang and the course at uni of warwick. also recommended to complete part A before part B as it builds the general intuition and knowledge of the discrete case before moving to the continuous case. Concepts such as 
-
-Course overview:
-

@@ -1,33 +1,27 @@
 ---
 title: "Quant"
 ---
-Welcome! This site is for anyone who wants to learn more about quantitative finance. Some topics need a bit of background, but I hope the key ideas can be grasped by anyone curious enough to try.
-
-The material is split roughly between **theory** and **application**, so you can see how the mathematics is actually used in code.
 
 ## What's on the site
 
 ### Theory
 
-**Discrete-time mathematical finance.** A basic introduction to mathematical finance that builds intuition by pricing assets in discrete time. This follows the module ST339, taught by Vicky Henderson at the University of Warwick. [See the course notes](theory/course_a_discrete.qmd).
+**Part I: Intro to Quant Finance.** A basic introduction to mathematical finance that builds intuition by pricing assets in discrete time. This follows the module ST339, taught by Vicky Henderson at the University of Warwick. [See the notes](theory/part_1_discrete.qmd).
 
-**Continuous-time mathematical finance.** This extends the ideas and intuition from the discrete case to continuous time. It follows the module ST401, taught by Gechun Liang at the University of Warwick. [See the course notes](theory/course_b_continuous.qmd).
+**Part II: Continuous-time Finance.** This extends the ideas and intuition from the discrete case to continuous time. It follows the module ST401, taught by Gechun Liang at the University of Warwick. [See the notes](theory/part_2_continuous.qmd).
 
 ### Application
 
-Alongside the theory, I also cover practical quant finance topics such as:
+Alongside the theory, I aim to cover practical quant finance topics such as:
 
 - Backtesting
 - Trading strategies
 - Performance metrics
 
-This is a mix of less mathematically rigourous but more practical topics, and is aimed at giving you the tools to apply the theory in practice.
-
-Wherever possible, theory pages are paired with Python code so you can see the ideas in action.
-
 ### Projects
 
 Projects bring together both the theory and application into self-contained examples. Some may be just one jupyter notebook and other's could be its own repo.
+
 The aim for the projects is to have one for each stage of learning so that after finishing a course you can apply the ideas into one project.
 
 ## Prerequisites
@@ -41,8 +35,8 @@ The aim for the projects is to have one for each stage of learning so that after
 
 ### Optional
 
-- **Measure Theory**: useful for continuous-time finance, but not essential.
-- **Probability Theory**: useful for continuous-time finance, but not essential.
+- **Measure Theory**: Helpful background for Part II: Continuous-time finance
+- **Probability Theory**: Helpful background for Part II: Continuous-time finance
 
 ## Reading list
 

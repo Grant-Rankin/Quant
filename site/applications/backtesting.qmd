@@ -1,1 +1,14 @@
-Backtesting
+---
+title: "Backtesting"
+subtitle: "How do quants test their stretegies"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: false
+jupyter: python3
+---
+
+Backtesting is how quants see how their strategies perform in the real-world.

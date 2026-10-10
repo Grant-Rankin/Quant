@@ -1,0 +1,12 @@
+{
+  "hash": "933855b4332b75bb64b964892f6b23b7",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Part I: Intro to Quant Finance\"\nsubtitle: \"Pricing assets in discrete time\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    number-sections: true\n    code-fold: true\n    code-tools: false\njupyter: python3\n---\n\nThis course is an introduction to mathematical finance, built around pricing assets in **discrete-time**. It loosely follows the Warwick module ST339 (Vicky Henderson), supported by two textbooks:\n\n- *Stochastic Finance: An Introduction in Discrete Time* by Hans Föllmer and Alexander Schied\n- *Stochastic Calculus for Finance I: The Binomial Asset Pricing Model* by Steven E. Shreve\n- *Options, Futures, and Other Derivatives* by John C. Hull\n\n",
+    "supporting": [
+      "part_1_discrete_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

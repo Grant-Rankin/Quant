@@ -1,0 +1,12 @@
+{
+  "hash": "72fd34e6ff61663ff0d594c59ba0f103",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Project A\nsubtitle: Currently under construction\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    number-sections: true\n    code-fold: true\n    code-tools: false\n---\n\n",
+    "supporting": [
+      "project_a_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

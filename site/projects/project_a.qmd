@@ -1,1 +1,12 @@
-Project A
+---
+title: "Project A"
+subtitle: "Currently under construction"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: false
+jupyter: python3
+---

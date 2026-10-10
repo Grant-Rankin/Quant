@@ -4,10 +4,10 @@ title: "About"
 
 My name is Grant and I am a mathematics student at the University of Warwick, interested in quantitative finance and machine learning.
 
-I started this site as a place to organise what I'm learning, and I hope it's useful to others who are curious about the subject too. The notes follow the theory courses I'm taking, and I pair them with code to show how the ideas work in practice.
+I started this site as a place to organise what I'm learning, and I hope it's useful to others who are curious about the subject too.
 
 ## Get in touch
 
-You can find me on LinkedIn: [Grant's LinkedIn profile](www.linkedin.com/in/grantrankin1).
+You can find me on [LinkedIn](https://www.linkedin.com/in/grantrankin1){target="_blank"}
 
 If you spot a mistake or have a suggestion for a topic, I'd love to hear from you.

@@ -1,0 +1,12 @@
+{
+  "hash": "062cf137c48d9aa3294809d8ad95fd3e",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Backtesting\"\nsubtitle: \"How do quants test their stretegies\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    number-sections: true\n    code-fold: true\n    code-tools: false\njupyter: python3\n---\n\nBacktesting is how quants see how their strategies perform in the real-world.\n\n",
+    "supporting": [
+      "backtesting_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

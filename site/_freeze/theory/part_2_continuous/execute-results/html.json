@@ -1,0 +1,12 @@
+{
+  "hash": "3c60991d6cda6d1a242f721fd5fd2f1e",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Part II: Continuous-time Finance\"\nsubtitle: \"Pricing assets in continuous time\"\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    number-sections: true\n    code-fold: true\n    code-tools: false\njupyter: python3\n---\n\nThis course builds upon the ideas in Part I and extends them to **continuous-time**.It loosely follows the Warwick module ST401 (Gachun Liang), supported by two textbooks:\n\n- *Stochastic Calculus for Finance II: Continuous-Time Models* by Steven E. Shreve.\n- *Arbitrage Theory in Continuous Time* by Tomas Björk.\n\n",
+    "supporting": [
+      "part_2_continuous_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
