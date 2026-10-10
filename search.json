@@ -1,58 +1,72 @@
 [
   {
-    "objectID": "pricing/black-scholes.html",
-    "href": "pricing/black-scholes.html",
-    "title": "Black-Scholes Pricing",
+    "objectID": "applications/backtesting.html",
+    "href": "applications/backtesting.html",
+    "title": "Backtesting",
     "section": "",
-    "text": "Why we need a closed-form price for European options."
-  },
-  {
-    "objectID": "pricing/black-scholes.html#motivation",
-    "href": "pricing/black-scholes.html#motivation",
-    "title": "Black-Scholes Pricing",
-    "section": "",
-    "text": "Why we need a closed-form price for European options."
-  },
-  {
-    "objectID": "pricing/black-scholes.html#the-maths",
-    "href": "pricing/black-scholes.html#the-maths",
-    "title": "Black-Scholes Pricing",
-    "section": "The maths",
-    "text": "The maths\nUnder the risk-neutral measure, the stock follows\n\\[dS_t = r S_t\\,dt + \\sigma S_t\\,dW_t\\]\nand the price of a European call is\n\\[C = S_0 N(d_1) - K e^{-rT} N(d_2)\\]\nwhere\n\\[d_1 = \\frac{\\ln(S_0/K) + (r + \\sigma^2/2)T}{\\sigma\\sqrt{T}}, \\qquad d_2 = d_1 - \\sigma\\sqrt{T}.\\]"
-  },
-  {
-    "objectID": "pricing/black-scholes.html#implementation",
-    "href": "pricing/black-scholes.html#implementation",
-    "title": "Black-Scholes Pricing",
-    "section": "Implementation",
-    "text": "Implementation\nSee the notebook."
-  },
-  {
-    "objectID": "pricing/black-scholes.html#results",
-    "href": "pricing/black-scholes.html#results",
-    "title": "Black-Scholes Pricing",
-    "section": "Results",
-    "text": "Results\n\n\n\nConvergence"
-  },
-  {
-    "objectID": "pricing/black-scholes.html#limitations",
-    "href": "pricing/black-scholes.html#limitations",
-    "title": "Black-Scholes Pricing",
-    "section": "Limitations",
-    "text": "Limitations\nConstant volatility, no jumps, European exercise only."
+    "text": "Backtesting is how quants see how their strategies perform in the real-world."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Quant",
     "section": "",
-    "text": "This is a Quarto website."
+    "text": "Part I: Intro to Quant Finance. A basic introduction to mathematical finance that builds intuition by pricing assets in discrete time. This follows the module ST339, taught by Vicky Henderson at the University of Warwick. See the notes.\nPart II: Continuous-time Finance. This extends the ideas and intuition from the discrete case to continuous time. It follows the module ST401, taught by Gechun Liang at the University of Warwick. See the notes.\n\n\n\nAlongside the theory, I aim to cover practical quant finance topics such as:\n\nBacktesting\nTrading strategies\nPerformance metrics\n\n\n\n\nProjects bring together both the theory and application into self-contained examples. Some may be just one jupyter notebook and other’s could be its own repo.\nThe aim for the projects is to have one for each stage of learning so that after finishing a course you can apply the ideas into one project."
+  },
+  {
+    "objectID": "index.html#whats-on-the-site",
+    "href": "index.html#whats-on-the-site",
+    "title": "Quant",
+    "section": "",
+    "text": "Part I: Intro to Quant Finance. A basic introduction to mathematical finance that builds intuition by pricing assets in discrete time. This follows the module ST339, taught by Vicky Henderson at the University of Warwick. See the notes.\nPart II: Continuous-time Finance. This extends the ideas and intuition from the discrete case to continuous time. It follows the module ST401, taught by Gechun Liang at the University of Warwick. See the notes.\n\n\n\nAlongside the theory, I aim to cover practical quant finance topics such as:\n\nBacktesting\nTrading strategies\nPerformance metrics\n\n\n\n\nProjects bring together both the theory and application into self-contained examples. Some may be just one jupyter notebook and other’s could be its own repo.\nThe aim for the projects is to have one for each stage of learning so that after finishing a course you can apply the ideas into one project."
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Quant",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nEssentials\n\nCalculus\nProbability and statistics\nLinear algebra\nPython\n\n\n\nOptional\n\nMeasure Theory: Helpful background for Part II: Continuous-time finance\nProbability Theory: Helpful background for Part II: Continuous-time finance"
+  },
+  {
+    "objectID": "index.html#reading-list",
+    "href": "index.html#reading-list",
+    "title": "Quant",
+    "section": "Reading list",
+    "text": "Reading list\n\nMathematical Finance: A Very Short Introduction by Mark H. A. Davis. A fun way to get a feel for the basic ideas.\nStochastic Calculus for Finance I: The Binomial Asset Pricing Model by Steven E. Shreve.\nStochastic Calculus for Finance II: Continuous-Time Models by Steven E. Shreve.\nOptions, Futures, and Other Derivatives by John C. Hull.\nArbitrage Theory in Continuous Time by Tomas Björk."
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Quant",
+    "section": "About",
+    "text": "About\nThis site is a learning resource, written as I learn. If you spot a mistake or have a suggestion, see the About page."
+  },
+  {
+    "objectID": "theory/part_1_discrete.html",
+    "href": "theory/part_1_discrete.html",
+    "title": "Part I: Intro to Quant Finance",
+    "section": "",
+    "text": "This course is an introduction to mathematical finance, built around pricing assets in discrete-time. It loosely follows the Warwick module ST339 (Vicky Henderson), supported by two textbooks:\n\nStochastic Finance: An Introduction in Discrete Time by Hans Föllmer and Alexander Schied\nStochastic Calculus for Finance I: The Binomial Asset Pricing Model by Steven E. Shreve\nOptions, Futures, and Other Derivatives by John C. Hull"
+  },
+  {
+    "objectID": "theory/part_2_continuous.html",
+    "href": "theory/part_2_continuous.html",
+    "title": "Part II: Continuous-time Finance",
+    "section": "",
+    "text": "This course builds upon the ideas in Part I and extends them to continuous-time.It loosely follows the Warwick module ST401 (Gachun Liang), supported by two textbooks:\n\nStochastic Calculus for Finance II: Continuous-Time Models by Steven E. Shreve.\nArbitrage Theory in Continuous Time by Tomas Björk."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "My name is Grant and I am a mathematics student at the University of Warwick, interested in quantitative finance and machine learning.\nI started this site as a place to organise what I’m learning, and I hope it’s useful to others who are curious about the subject too."
+  },
+  {
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About",
+    "section": "Get in touch",
+    "text": "Get in touch\nYou can find me on LinkedIn\nIf you spot a mistake or have a suggestion for a topic, I’d love to hear from you."
   }
 ]

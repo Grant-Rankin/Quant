@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Black-Scholes Pricing – Quant</title>
+<title>Part II: Continuous-time Finance – Quant</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,35 +74,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -129,26 +100,45 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pricing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Pricing</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-theory" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Theory</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-pricing">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-theory">    
         <li>
-    <a class="dropdown-item" href="../pricing/black-scholes.html">
- <span class="dropdown-text">Black-Scholes</span></a>
+    <a class="dropdown-item" href="../theory/part_1_discrete.html">
+ <span class="dropdown-text">Part I:Intro to Quant Finance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../theory/part_2_continuous.html">
+ <span class="dropdown-text">Part II:Continuous-time Finance</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../projects/project_a.html">
+ <span class="dropdown-text">Project A</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-applications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Applications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-applications">    
+        <li>
+    <a class="dropdown-item" href="../applications/backtesting.html">
+ <span class="dropdown-text">Backtesting</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com//quant"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -161,25 +151,16 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
-  <li><a href="#the-maths" id="toc-the-maths" class="nav-link" data-scroll-target="#the-maths">The maths</a></li>
-  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Black-Scholes Pricing</h1>
+<h1 class="title">Part II: Continuous-time Finance</h1>
+<p class="subtitle lead">Pricing assets in continuous time</p>
 </div>
 
 
@@ -196,38 +177,13 @@ window.Quarto = {
 </header>
 
 
-<section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
-<p>Why we need a closed-form price for European options.</p>
-</section>
-<section id="the-maths" class="level2">
-<h2 class="anchored" data-anchor-id="the-maths">The maths</h2>
-<p>Under the risk-neutral measure, the stock follows</p>
-<p><span class="math display">\[dS_t = r S_t\,dt + \sigma S_t\,dW_t\]</span></p>
-<p>and the price of a European call is</p>
-<p><span class="math display">\[C = S_0 N(d_1) - K e^{-rT} N(d_2)\]</span></p>
-<p>where</p>
-<p><span class="math display">\[d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}, \qquad d_2 = d_1 - \sigma\sqrt{T}.\]</span></p>
-</section>
-<section id="implementation" class="level2">
-<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
-<p>See the <a href="https://github.com/%3CGrant-Rankin%3E/quant-lab/blob/main/notebooks/01_black_scholes.ipynb">notebook</a>.</p>
-</section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/bs_convergence.png" class="img-fluid figure-img"></p>
-<figcaption>Convergence</figcaption>
-</figure>
-</div>
-</section>
-<section id="limitations" class="level2">
-<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>Constant volatility, no jumps, European exercise only.</p>
+<p>This course builds upon the ideas in Part I and extends them to <strong>continuous-time</strong>.It loosely follows the Warwick module ST401 (Gachun Liang), supported by two textbooks:</p>
+<ul>
+<li><em>Stochastic Calculus for Finance II: Continuous-Time Models</em> by Steven E. Shreve.</li>
+<li><em>Arbitrage Theory in Continuous Time</em> by Tomas Björk.</li>
+</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

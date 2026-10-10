@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Grant-Rankin.github.io/Quant/pricing/black-scholes.html</loc>
-    <lastmod>2026-10-03T10:21:42.265Z</lastmod>
+    <loc>https://Grant-Rankin.github.io/Quant/applications/backtesting.html</loc>
+    <lastmod>2026-10-10T09:19:15.226Z</lastmod>
   </url>
   <url>
     <loc>https://Grant-Rankin.github.io/Quant/index.html</loc>
-    <lastmod>2026-10-03T10:24:15.772Z</lastmod>
+    <lastmod>2026-10-10T09:21:42.968Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Grant-Rankin.github.io/Quant/theory/part_1_discrete.html</loc>
+    <lastmod>2026-10-10T09:21:02.010Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Grant-Rankin.github.io/Quant/projects/project_a.html</loc>
+    <lastmod>2026-10-10T08:55:25.126Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Grant-Rankin.github.io/Quant/theory/part_2_continuous.html</loc>
+    <lastmod>2026-10-10T09:13:28.383Z</lastmod>
   </url>
   <url>
     <loc>https://Grant-Rankin.github.io/Quant/about.html</loc>
-    <lastmod>2026-10-03T10:17:05.560Z</lastmod>
+    <lastmod>2026-10-10T08:55:25.126Z</lastmod>
   </url>
 </urlset>
